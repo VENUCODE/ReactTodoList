@@ -7,7 +7,8 @@ const Form = (props) => {
     e.preventDefault();
     props.onSubmit({
       id: Math.floor(Math.random() * 10000),
-      text: input
+      text: input,
+      isComplete:false
     });
     setInput('');
   };
